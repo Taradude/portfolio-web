@@ -1,0 +1,51 @@
+section.top > .bottom > .left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+section.top > .bottom > .left ul a {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  text-decoration: none;
+  padding: 0.3em 3em;
+  overflow: hidden;
+  position: relative;
+}
+
+section.top > .bottom > .left ul a .heading-container {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  height: 40px;
+}
+
+section.top > .bottom > .left ul a p.primary,
+section.top > .bottom > .left ul a p.secondary {
+  font-size: clamp(1.5rem, 1.5vw, 4rem);
+  width: 100%;
+  margin: 0;
+}
+
+section.top > .bottom > .left ul a p.primary {
+  transform: translateY(-10%);
+}
+
+section.top > .bottom > .left ul a .line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 3%;
+  border-bottom: 2px solid black;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+.date {
+  transform-origin: right;
+  transform: translateX(200%);
+  font-weight: bold;
+}
